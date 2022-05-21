@@ -1,0 +1,37 @@
+FUNCTION OVERIDDING:
+#include<iostream>
+using namespace std;
+ 
+class BaseClass
+{
+public:
+    virtual void Dis()
+    {
+        cout << "\nThis is Dis() method";
+    }
+    void Show()
+    {
+        cout << "\nThis is Show() method of BaseClass";
+    }
+};
+ 
+class DerivedClass : public BaseClass
+{
+public:
+    // Overriding method - new working of
+    // base class's display method
+    void Dis()
+    {
+        cout << "\nThis is Dis() method"
+               " of DerivedClass";
+    }
+};
+ 
+// Driver code
+int main()
+{
+    DerivedClass dr;
+    BaseClass &bs = dr;
+    bs.Dis();
+    dr.Show();
+}

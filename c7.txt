@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class MyClass {      
+  public:             
+    int myr;        
+    string myn; 
+    string myc;
+};
+
+int main() {
+  MyClass myObj;  
+  myObj.myr = 1;
+  myObj.myn = "Varsha";
+  myObj.myc="CSE";
+  
+  MyClass myObj1;  
+  myObj1.myr = 2;
+  myObj1.myn = "Vanshika";
+  myObj1.myc="CSE";
+  
+  MyClass myObj2;  
+  myObj2.myr = 3;
+  myObj2.myn = "Sachin";
+  myObj2.myc="CSE";
+  
+  MyClass myObj3;  
+  myObj3.myr = 4;
+  myObj3.myn = "Abhi";
+  myObj3.myc="CSE";
+  
+  MyClass myObj4;  
+  myObj4.myr = 5;
+  myObj4.myn = "Vinnie";
+  myObj4.myc="CSE";
+
+  
+  cout <<"Roll No. of student is: "<< myObj.myr << "\n"<<"Name of the student is: "<<myObj.myn <<"\n"<< "Course enrolled is: "<<myObj.myc<<"\n"<<"\n";
+  
+  cout <<"Roll No. of student is: "<< myObj1.myr << "\n"<<"Name of the student is: "<<myObj1.myn <<"\n"<< "Course enrolled is: "<<myObj1.myc<<"\n"<<"\n";
+  
+  cout <<"Roll No. of student is: "<< myObj2.myr << "\n"<<"Name of the student is: "<<myObj2.myn <<"\n"<< "Course enrolled is: "<<myObj2.myc<<"\n"<<"\n";
+  
+  cout <<"Roll No. of student is: "<< myObj3.myr << "\n"<<"Name of the student is: "<<myObj3.myn <<"\n"<< "Course enrolled is: "<<myObj3.myc<<"\n"<<"\n";
+  
+  cout <<"Roll No. of student is: "<< myObj4.myr << "\n"<<"Name of the student is: "<<myObj4.myn <<"\n"<< "Course enrolled is: "<<myObj4.myc<<"\n"<<"\n";
+  
+  return 0;
+}

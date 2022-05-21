@@ -1,0 +1,39 @@
+FUCTION OVERLOADING:
+#include <iostream>
+using namespace std;
+
+void task(int);
+void task(float);
+void task(int, float);
+ 
+int main()
+{
+    int a = 100;
+    float b = 100.5;
+ 
+    
+    task(a);
+    task(b);
+    task(a, b);
+ 
+    return 0;
+}
+
+void task(int value)
+{
+    cout << "Integer number: " << value << endl;
+}
+ 
+// Method 2
+void task(float value)
+{
+    cout << "Float number: "<< value << endl;
+}
+ 
+// Method 3
+void task(int value1, float value2)
+{
+    cout << "Integer number: " << value1;
+    cout << " and float number:" << value2;
+}
+

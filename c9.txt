@@ -1,0 +1,32 @@
+1.LINEAR SEARCHING:
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int ar[10],s,item,i,j;
+cout<<"Enter no. of elements: ";
+cin>>s;
+cout<<"Enter elements(not more than 10): ";
+for(i=0;i<s;i++)
+cin>>ar[i];
+cout<<"Enter element you want to searche: ";
+cin>>item;
+for(i=0;i<s;i++)
+{
+    if(ar[i]==item)
+    {
+    j=1;
+    break;
+    }
+}    
+if(j==1)
+cout<<"Element is at index: "<<(i+1);
+else
+cout<<"Element not Found";
+
+
+
+
+return 0;
+}
